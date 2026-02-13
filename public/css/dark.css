@@ -1,0 +1,110 @@
+/* Dark Mode Theme - ZyncWeb Solutions */
+
+[data-theme="dark"] {
+    /* Dark Mode Colors (2026 Spec) */
+    --primary-color: #EAEFF3;
+    --bg-light: #231F20;
+    --white: #2d2d2d;
+    --accent-blue: #255BA9;
+    --accent-teal: #3FBFB8;
+    
+    /* Semantic Colors */
+    --text-main: #EAEFF3;
+    --text-muted: rgba(234, 239, 243, 0.80); /* WCAG AA Compliant */
+    --heading-color: #EAEFF3;
+    --link-color: #3FBFB8;
+    --link-hover: #2fa89f;
+    --card-bg: rgba(45, 45, 45, 0.95);
+    --border-color: rgba(255, 255, 255, 0.08);
+    
+    /* Shadows - Dark Mode */
+    --shadow-sm: 0 4px 12px rgba(0,0,0,0.3);
+    --shadow-md: 0 12px 32px rgba(0,0,0,0.4);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* Dark Mode Specific Styles */
+
+[data-theme="dark"] body {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+}
+
+/* Glassmorphism Header - Dark Mode */
+[data-theme="dark"] .glass-nav {
+    background: rgba(45, 45, 45, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Card Styles - Dark Mode */
+[data-theme="dark"] .card-glass {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .card-glass:hover {
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* Service Card Hover - Dark Mode */
+[data-theme="dark"] .svc-card:hover {
+    box-shadow: 0 16px 40px rgba(37, 91, 169, 0.3);
+}
+
+/* Buttons - Dark Mode */
+[data-theme="dark"] .btn-primary {
+    background: var(--accent-teal);
+    color: #231F20;
+}
+
+[data-theme="dark"] .btn-outline {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .btn-outline:hover {
+    background: var(--primary-color);
+    color: #231F20;
+}
+
+/* Footer - Dark Mode */
+[data-theme="dark"] .main-footer {
+    background: #0b0b0b;
+    color: #EAEFF3;
+}
+
+/* Theme Toggle Button - Dark Mode */
+[data-theme="dark"] .theme-toggle {
+    background: rgba(234, 239, 243, 0.1);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background: rgba(234, 239, 243, 0.15);
+}
+
+/* Text Selection - Dark Mode */
+[data-theme="dark"] ::selection {
+    background: var(--accent-teal);
+    color: #EAEFF3;
+}
+
+/* Scrollbar - Dark Mode */
+[data-theme="dark"] ::-webkit-scrollbar {
+    width: 12px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    border-radius: 6px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a;
+}

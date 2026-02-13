@@ -1,0 +1,98 @@
+/* Light Mode Theme - ZyncWeb Solutions */
+
+:root {
+    /* Light Mode Colors (2026 Spec) */
+    --primary-color: #231F20;     /* Industrial Black */
+    --bg-light: #EAEFF3;         /* Aero Grey */
+    --accent-blue: #255BA9;      /* Deep Sea Blue */
+    --accent-teal: #3FBFB8;      /* Digital Teal */
+    --white: #FFFFFF;
+    
+    /* Semantic Colors */
+    --text-main: #231F20;
+    --text-muted: rgba(35, 31, 32, 0.75); /* WCAG AA Compliant */
+    --heading-color: #231F20;
+    --link-color: #255BA9;
+    --link-hover: #1e4a8a;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --border-color: rgba(35, 31, 32, 0.08);
+
+    /* Transition Rule */
+    --theme-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Spacing & Layout */
+    --section-spacing: 140px;
+    --section-spacing-mobile: 80px;
+    --container-width: 1280px;
+    
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Shadows - Light Mode */
+    --shadow-sm: 0 4px 12px rgba(0,0,0,0.03);
+    --shadow-md: 0 12px 32px rgba(0,0,0,0.06);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+/* Light Mode Specific Styles */
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+}
+
+/* Glassmorphism Header - Light Mode */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(35, 31, 32, 0.05);
+}
+
+/* Card Styles - Light Mode */
+.card-glass {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.card-glass:hover {
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+/* Service Card Hover - Light Mode */
+.svc-card:hover {
+    box-shadow: 0 16px 40px rgba(37, 91, 169, 0.15);
+}
+
+/* Buttons - Light Mode */
+.btn-primary {
+    background: var(--accent-blue);
+    color: #FFFFFF;
+}
+
+.btn-outline {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Footer - Light Mode */
+.main-footer {
+    background: #0b0b0b;
+    color: #EAEFF3;
+}
+
+/* Theme Toggle Button - Light Mode */
+.theme-toggle {
+    background: rgba(35, 31, 32, 0.1);
+    color: var(--primary-color);
+}
+
+.theme-toggle:hover {
+    background: rgba(35, 31, 32, 0.15);
+}
